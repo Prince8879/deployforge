@@ -21,10 +21,6 @@ deployforge/
 │   ├── docker-build.ps1
 │   └── deploy.sh
 │
-├── docker/
-│   ├── Dockerfile
-│   └── .dockerignore
-│
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml
@@ -32,7 +28,6 @@ deployforge/
 │       └── deploy.yml
 │
 ├── deploy/
-│   ├── compose.yaml
 │   ├── compose.prod.yaml
 │   └── nginx/
 │       └── nginx.conf
@@ -70,7 +65,9 @@ deployforge/
 ├── Dockerfile
 ├── compose.yaml
 ├── Makefile
-└── README.md
+├── README.md
+├── Masterplan.txt
+└── Project Structure.txt
 
 1. Har folder ka kaam
 
