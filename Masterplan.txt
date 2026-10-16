@@ -1,0 +1,59 @@
+01
+
+Foundation & Application
+Start here
+- Python environment aur Flask setup
+- Basic web application
+- /health endpoint
+- Unit tests using pytest
+- Git repository and README
+
+
+
+02
+
+Containerization
+- Dockerfile aur .dockerignore
+- Docker image build
+- Container ports aur health checks
+- Container logs aur restart policy
+
+
+
+03
+
+CI Pipeline
+- GitHub Actions workflow
+- Automatic tests on push and pull request
+- Docker image build validation
+- Failed checks ko debug karna
+
+
+
+04
+
+Image Registry & CD
+- GitHub Container Registry (GHCR)
+- Versioned Docker images
+- Linux server deployment
+- Controlled automatic deployment
+
+
+
+05
+
+AWS Deployment
+- EC2 instance and security groups
+- SSH access and least privilege
+- Environment configuration
+- Deployment verification and recovery
+
+
+
+06
+
+Monitoring & Finalization
+- Prometheus metrics
+- Grafana dashboard
+- Logs, uptime and troubleshooting
+- Security review and final documentation
