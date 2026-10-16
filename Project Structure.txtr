@@ -1,0 +1,122 @@
+deployforge/
+
+Root directory: D:\Project\deployforge
+
+deployforge/
+│
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   ├── config.py
+│   └── metrics.py
+│
+├── tests/
+│   ├── conftest.py
+│   ├── test_health.py
+│   ├── test_routes.py
+│   └── test_metrics.py
+│
+├── scripts/
+│   ├── local-test.ps1
+│   ├── docker-build.ps1
+│   └── deploy.sh
+│
+├── docker/
+│   ├── Dockerfile
+│   └── .dockerignore
+│
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       ├── docker-publish.yml
+│       └── deploy.yml
+│
+├── deploy/
+│   ├── compose.yaml
+│   ├── compose.prod.yaml
+│   └── nginx/
+│       └── nginx.conf
+│
+├── infrastructure/
+│   └── aws/
+│       ├── README.md
+│       ├── ec2-setup.sh
+│       └── security-checklist.md
+│
+├── monitoring/
+│   ├── prometheus/
+│   │   └── prometheus.yml
+│   └── grafana/
+│       ├── provisioning/
+│       │   ├── datasources/
+│       │   │   └── prometheus.yml
+│       │   └── dashboards/
+│       │       └── dashboard.yml
+│       └── dashboards/
+│           └── deployforge-overview.json
+│
+├── docs/
+│   ├── architecture.md
+│   ├── setup.md
+│   ├── deployment.md
+│   ├── monitoring.md
+│   └── troubleshooting.md
+│
+├── .env.example
+├── .gitignore
+├── .dockerignore
+├── requirements.txt
+├── requirements-dev.txt
+├── Dockerfile
+├── compose.yaml
+├── Makefile
+└── README.md
+
+1. Har folder ka kaam
+
+app/ — Application code
+Flask application, API routes, configuration aur Prometheus metrics expose karne ka code.
+
+
+
+tests/ — Automated testing
+Health endpoint, application routes aur metrics ke tests. pytest se run honge.
+
+
+
+docker/ and deploy/ — Containerization
+Docker image build karna, local containers run karna aur production services configure karna.
+
+
+
+.github/workflows/ — CI/CD
+ci.yml tests run karega, docker-publish.yml image publish karega, aur deploy.yml deployment automate karega. Har workflow apne phase mein enable hoga.
+
+
+
+infrastructure/aws/ — Cloud infrastructure
+EC2 setup instructions, deployment preparation aur security checklist.
+
+
+
+monitoring/ — Observability
+Prometheus metrics scraping aur Grafana datasource/dashboard configuration.
+
+
+
+docs/ — Documentation
+Architecture, installation, deployment, monitoring aur troubleshooting guides.
+
+
+
+2. Important root files
+File	                                  Purpose
+requirements.txt                          Production Python dependencies
+requirements-dev.txt	                  Pytest aur development dependencies
+.env.example	                          Required environment variables ka template; real secrets nahi
+.gitignore	                              Git se local files aur secrets exclude karna
+.dockerignore	                          Docker build context se unnecessary files exclude karna
+Dockerfile	                              Application image build karna
+compose.yaml	                          Local multi-container setup
+Makefile	                              Common development commands ko simplify karna
+README.md	                              Project overview, setup aur usage instructions
