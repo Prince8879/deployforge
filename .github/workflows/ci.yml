@@ -1,0 +1,29 @@
+name: DeployForge-CI
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: check-code
+        uses: actions/checkout@v4
+
+      - name: setup-Python
+        uses: actions/setup-python@v5
+
+        with:
+          python-version: "3.13"
+      - name: install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Run test
+        run: python -m pytest
+
+
+
