@@ -54,4 +54,7 @@ To be decided.
 ## Git Clone
 https://github.com/Prince8879/deployforge.git
 
+## Author
+Prince Tiwari
+https://github.com/Prince8879/
 
