@@ -43,7 +43,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/deployforge
+          IMAGE_NAME=ghcr.io/prince8879/deployforge
           docker build -t $IMAGE_NAME:latest .
           docker push $IMAGE_NAME:latest
 
