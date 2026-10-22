@@ -210,4 +210,5 @@ No license has been specified yet. Add an appropriate license before explicitly 
 ---
 **Project:** DeployForge  
 **Repository:** https://github.com/Prince8879/deployforge  
+**Container Registry:** https://github.com/users/Prince8879/packages/container/deployforge
 
